@@ -1,0 +1,74 @@
+.tabs{
+    display: flex;
+    flex-wrap:wrap;
+    max-width: 800px;
+    font-family: sans-serif;
+    direction: rtl;
+    text-align: right;
+}
+
+.tabs__label{
+    padding:8px 12px;
+    cursor: pointer;
+}
+
+.tabs__radio{
+    display: none;
+}
+
+.tabs__content{
+    order:1;
+    width: 100%;
+    line-height: 1.5;
+    font-size: 0.9em;
+    display: none;
+    padding:2%;
+    
+}
+
+.upper-details{
+    border: solid 2px #ff8c00;
+    border-radius: 20px;
+    padding:1% 5%;
+}
+
+
+.tabs__radio:checked+.tabs__label{
+    font-weight: bold;
+    border: solid 2px #ff8c00;
+    color:#ff8c00;
+    border-radius: 20px;
+}
+
+.tabs__radio:checked+.tabs__label+.tabs__content{
+    display: initial;
+}
+
+.upper-details__summary{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.game-details{
+    margin:3%;
+}
+
+
+.tutorial-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-items: center;
+}
+
+.tutorial-right{
+    flex-basis: 48%;
+}
+
+.tutorial-left{
+    flex-basis: 48%;
+    margin: 2%;
+    align-items: center;
+    align-content: center;
+}
